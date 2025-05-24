@@ -25,24 +25,31 @@
   --text-label: #BAC6C9;
   
   --ff-raleway: "Raleway", sans-serif;
-  --title-lg: 700 3rem/auto var(--ff-raleway);
-  --title-md: 700 2.5rem/auto var(--ff-raleway);
-  --title-sm: 700 2rem/auto var(--ff-raleway);
-  --title-xs: 700 1rem/auto var(--ff-raleway);
+  --title-lg: 700 3rem/normal var(--ff-raleway);
+  --title-md: 700 2.5rem/normal var(--ff-raleway);
+  --title-sm: 700 2rem/normal var(--ff-raleway);
+  --title-xs: 700 1rem/normal var(--ff-raleway);
   --subtitle: 500 2rem/2.0% var(--ff-raleway);
-  --body-lg-regular: 400 1.25rem/1.4% var(--ff-raleway);
-  --body-lg-bold: 700 1.25rem/1.4% var(--ff-raleway);
-  --body-md-regular: 400 3rem/auto var(--ff-raleway);
-  --body-md-bold: 700 3rem/auto var(--ff-raleway);
-  --body-sm-regular: 400 0.875rem/auto var(--ff-raleway);
-  --body-sm-bold: 700 0.875rem/auto var(--ff-raleway);
-  --body-xs-regular: 400 0.75rem/auto var(--ff-raleway);
-  --body-xs-bold: 700 0.75rem/auto var(--ff-raleway);
-  --button: 700 3rem/auto var(--ff-raleway);
-  --tag: 700 0.625/auto var(--ff-raleway);
+  --body-lg-regular: 400 1.25rem/1.4 var(--ff-raleway);
+  --body-lg-bold: 700 1.25rem/1.4 var(--ff-raleway);
+  --body-md-regular: 400 3rem/normal var(--ff-raleway);
+  --body-md-bold: 700 3rem/normal var(--ff-raleway);
+  --body-sm-regular: 400 0.875rem/normal var(--ff-raleway);
+  --body-sm-bold: 700 0.875rem/normal var(--ff-raleway);
+  --body-xs-regular: 400 0.75rem/normal var(--ff-raleway);
+  --body-xs-bold: 700 0.75rem/normal var(--ff-raleway);
+  --button: 700 3rem/normal var(--ff-raleway);
+  --tag: 700 0.625/normal var(--ff-raleway);
  }
 
  button {
-  font: 700 0.875rem/auto var(--ff-raleway);
+  font: 700 0.875rem/normal var(--ff-raleway);
  }
 
+ h1 {
+  font: var(--title-lg);
+ }
+
+ p {
+  font: var(--body-lg-regular);
+ }
