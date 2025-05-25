@@ -42,6 +42,10 @@
   --tag: 700 0.625/normal var(--ff-raleway);
  }
 
+ body {
+  background-color: var(--shape-background);
+ }
+
  button {
   font: 700 0.875rem/normal var(--ff-raleway);
  }

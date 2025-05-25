@@ -1,8 +1,8 @@
 .hero {
   width: 100%;
   height: 59.25rem;
-  background: url('../assets/images/hero-background.png') var(--pink-low) 50% / cover no-repeat;
   
+   
   & header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,11 @@
     margin: 0 auto;
     text-align: center;
     color: var(--text-title);
+    opacity: 0;
+    transform: scaleZ(0);
+    animation: text-appear 4s ease forwards;
+    animation-delay: 1s;
+    
     
     & h1 {
       margin-bottom: 2rem;
@@ -41,5 +46,41 @@
       margin: 0 auto;
       color: var(--text-body);
     }
+  }
+  
+  & img.hero-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transform: scaleZ(0);
+    opacity: 0;
+    animation: bg-appear 4s ease forwards;
+    object-fit: cover;
+
+  }
+}
+
+@keyframes bg-appear {
+  from {
+    opacity: 0;
+    transform: scaleZ(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleZ(-1);
+  }
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: scaleZ(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleZ(-1);
   }
 }
