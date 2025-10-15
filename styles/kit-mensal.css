@@ -42,31 +42,136 @@
       position: absolute;
       width: 172px;
       height: 536px;
+      top: 10%;
+      left: 51%;
+      transition: transform 300ms ease, top 300ms ease, left 300ms ease;
+      
+      z-index: -1;
+    }
+
+    &:hover .yellowBookmark {
       top: 5%;
       left: 60.7%;
       transform: rotate(12deg);
-      z-index: -1;
     }
 
     & .purpleBookmark {
       position: absolute;
       width: 172px;
       height: 536px;
+      top: 10%;
+      left: 51%;
+      transition: transform 300ms ease, top 300ms ease, left 300ms ease;
+      
+      z-index: -2;
+    }
+
+    &:hover .purpleBookmark {
       top: 12%;
       left: 67%;
       transform: rotate(22deg);
-      z-index: -2;
     }
 
     & .pin {
       position: absolute;
       width: 222px;
       height: 254px;
+      top: 30%;
+      left: 35%;
+      transition: transform 300ms ease, top 300ms ease, left 300ms ease;
+      z-index: -1;
+      
+    }
+
+    &:hover .pin {
       top: 37%;
       left: 24.5%;
       transform: rotate(-8deg);
+    }
+
+    & .arrow1 {
+      position: absolute;
+      top: 10%;
+      left: 38%;
+      transition: top 300ms ease, left 300ms ease;
+
       z-index: -1;
-      
+    }
+
+    &:hover .arrow1 {
+      top: 7%;
+      left: 24%;
+    }
+
+    & .p1 {
+      position: absolute;
+      top: 10%;
+      left: 38%;
+      transition: top 300ms ease, left 300ms ease;
+
+      z-index: -1;
+    }
+
+    &:hover .p1 {
+      top: 5%;
+      left: 19%;
+    }
+
+    & .arrow2 {
+      position: absolute;
+      top: 30%;
+      left: 38%; 
+      transition: top 300ms ease, left 300ms ease;
+
+      z-index: -1;
+    }
+
+    &:hover .arrow2 {
+      top: 32%;
+      left: 21%; 
+    }
+
+    & .p2 {
+      position: absolute;
+      top: 30%;
+      left: 38%;
+      transition: top 300ms ease, left 300ms ease;
+
+      z-index: -1;
+    }
+
+    &:hover .p2 {
+      top: 30%;
+      left: 20%;
+    }
+
+
+    & .arrow3 {
+      position: absolute;
+      top: 35%;
+      right: 37%;  
+      transition: top 300ms ease, right 300ms ease;
+
+      z-index: -1;
+    }
+
+    &:hover .arrow3 {
+      top: 44%;
+      right: 25.6%;  
+    }
+
+    & .p3 {
+      position: absolute;
+      top: 35%;
+      right: 37%;
+      transition: top 300ms ease, right 300ms ease;
+
+      z-index: -1;
+    }
+
+    &:hover .p3 {
+      top: 54.5%;
+      right: 29.5%;
     }
   }
 }
