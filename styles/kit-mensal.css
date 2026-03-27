@@ -23,9 +23,9 @@
   }
 
   & .book-container {
-    /* border: 1px solid red; */
     max-width: 1440px;
-    min-height: 1586px;
+    min-height: 920px;
+
     position: relative;
     margin: auto;
 
@@ -45,7 +45,7 @@
       position: absolute;
       width: 172px;
       height: auto;
-      top: 10%;
+      top: 20%;
       left: 51%;
       transition: transform 300ms ease, top 300ms ease, left 300ms ease;
       
@@ -53,8 +53,8 @@
     }
 
     &:hover .yellowBookmark {
-      top: 5%;
-      left: 60.7%;
+      top: 18%;
+      left: 61.5%;
       transform: rotate(12deg);
     }
 
@@ -62,7 +62,7 @@
       position: absolute;
       max-width: 172px;
       height: 536px;
-      top: 10%;
+      top: 20%;
       left: 51%;
       transition: transform 300ms ease, top 300ms ease, left 300ms ease;
       
@@ -70,8 +70,8 @@
     }
 
     &:hover .purpleBookmark {
-      top: 12%;
-      left: 67%;
+      top: 21%;
+      left: 69%;
       transform: rotate(22deg);
     }
 
@@ -87,14 +87,14 @@
     }
 
     &:hover .pin {
-      top: 37%;
-      left: 24.5%;
+      top: 63.5%;
+      left: 23%;
       transform: rotate(-8deg);
     }
 
     & .arrow1 {
       position: absolute;
-      top: 10%;
+      top: 20%;
       left: 38%;
       transition: top 300ms ease, left 300ms ease;
 
@@ -102,13 +102,13 @@
     }
 
     &:hover .arrow1 {
-      top: 7%;
-      left: 24%;
+      top: 12.5%;
+      left: 23.5%;
     }
 
     & .p1 {
       position: absolute;
-      top: 10%;
+      top: 20%;
       left: 38%;
       transition: top 300ms ease, left 300ms ease;
 
@@ -116,8 +116,8 @@
     }
 
     &:hover .p1 {
-      top: 5%;
-      left: 19%;
+      top: 9%;
+      left: 18%;
     }
 
     & .arrow2 {
@@ -130,8 +130,8 @@
     }
 
     &:hover .arrow2 {
-      top: 32%;
-      left: 21%; 
+      top: 55%;
+      left: 20%; 
     }
 
     & .p2 {
@@ -144,8 +144,8 @@
     }
 
     &:hover .p2 {
-      top: 30%;
-      left: 20%;
+      top: 51%;
+      left: 18%;
     }
 
 
@@ -159,13 +159,13 @@
     }
 
     &:hover .arrow3 {
-      top: 44%;
-      right: 25.6%;  
+      top: 76%;
+      right: 23%;  
     }
 
     & .p3 {
       position: absolute;
-      top: 35%;
+      top: 20%;
       right: 37%;
       transition: top 300ms ease, right 300ms ease;
 
@@ -173,8 +173,8 @@
     }
 
     &:hover .p3 {
-      top: 54.5%;
-      right: 29.5%;
+      top: 94%;
+      right: 26%;
     }
   }
 }
