@@ -40,7 +40,7 @@
   --body-xs-bold: 700 0.75rem/normal var(--ff-raleway);
   --button: 700 0.875rem/normal var(--ff-raleway);
   --link: 500 0.875rem/normal var(--ff-raleway);
-  --tag: 700 0.625/normal var(--ff-raleway);
+  --tag: 700 0.625rem/normal var(--ff-raleway);
  }
 
  body {
