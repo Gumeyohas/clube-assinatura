@@ -3,7 +3,7 @@
   
   & div {
     position: relative;
-    width: 90rem;
+    max-width: 90rem;
     margin: 6rem auto 5rem;
     padding: 7.125rem 2rem 9.875rem;
     text-align: center;
@@ -28,7 +28,7 @@
     }
 
     & img:nth-child(1) {
-      width: 5.5rem;
+      max-width: 5.5rem;
       top: 0;
       left: 45%;
       opacity: 0;
@@ -39,7 +39,7 @@
     }
 
     & img:nth-child(2) {
-      width: 5rem;
+      max-width: 5rem;
       bottom: 10%;
       left: 3%;
       opacity: 0;
@@ -51,7 +51,7 @@
     }
 
     & img:nth-child(3) {
-      width: 4.5rem;
+      max-width: 4.5rem;
       bottom: 12%;
       right: 0;
       opacity: 0;
@@ -64,7 +64,7 @@
 
     & p {
       font: 500 2rem/2 var(--ff-raleway);
-      width: 71rem;
+      max-width: 71rem;
       margin: auto;      
     }
 
