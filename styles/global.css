@@ -43,7 +43,7 @@
   --tag: 700 0.625rem/normal var(--ff-raleway);
  }
 
- body {
+ body, html {
   background-color: var(--shape-background);
   margin: 0;
   overflow-x: hidden;
