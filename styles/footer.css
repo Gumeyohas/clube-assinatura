@@ -6,7 +6,8 @@ footer {
     width: 100%;
     height: 25.938rem;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
+    inset: 0;
   }
 
   & .footer-container {
@@ -16,6 +17,8 @@ footer {
     height: 25.938rem;
     max-width: 1120px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 
     & .social-media {
       display: flex;
@@ -63,6 +66,30 @@ footer {
           font: var(--link);
           color: var(--blue-light);
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    width: 100%; 
+
+    & .footer-container {
+      width: 100%;
+      max-width: none;
+      padding: 0 1.5rem;
+      flex-direction: column;
+      justify-content: space-around;
+
+      & .social-media {
+        width: 100%;
+        gap: 24px;
+
+        & .footer-logo-horizontal {
+          width: 158px;
+          margin: 0 auto;
         }
       }
     }

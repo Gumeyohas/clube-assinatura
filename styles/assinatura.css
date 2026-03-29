@@ -40,13 +40,7 @@
       right: 35%;
       transition: bottom 300ms ease, right 300ms;
     }
-
-    &:has(.card-semestral:hover) img.stars-right {
-      position: absolute;
-      bottom: 0%;
-      right: 10%;
-    }
-
+    
     & .card-semestral {
       background-color: var(--shape-hover);
       max-width: 288px;
@@ -58,35 +52,35 @@
       flex-direction: column;
       justify-content: space-between;
       z-index: 1;
-
+      
       & img.purple-rabbit {
         position: absolute;
         bottom: 100%;
         left: 11%;
       }
-
+      
       & .card-grid-semestral {
         position: relative;
         padding: 2rem 2rem 0;
         display: grid;
         grid-template-areas: 
-          "titulo"
-          "preco-mensal"
-          "preco-anual";
-
+        "titulo"
+        "preco-mensal"
+        "preco-anual";
+        
         & h4 {
           grid-area: titulo;
           font: var(--title-xs);
           color: var(--pink-light);
         }
-
+        
         & p.trending {
           font: var(--tag);
           color: var(--text-body);
           background-color: var(--shape-stroke);
           border-radius: 999px;
           /* Tag */
-
+          
           position: absolute;
           width: 5.625rem;
           height: 1.875rem;
@@ -96,14 +90,14 @@
           text-align: center;
           align-content: center;
         }
-
+        
         & p.preco-mensal {
           grid-area: preco-mensal;
           font: var(--title-sm);
           color: var(--text-title);
           margin-top: 1.5rem;
         }
-
+        
         & p.preco-anual {
           grid-area: preco-anual;
           font: var(--body-sm-regular);
@@ -112,7 +106,7 @@
           margin-bottom: 4.375rem;
         }
       }
-
+      
       & ul {
         display: flex;
         flex-direction: column;
@@ -120,7 +114,7 @@
         max-width: 14rem;
         margin: 0 auto;
       }
-
+      
       & li {
         font: var(--body-xs-regular);
         color: var(--text-body);
@@ -128,14 +122,14 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-
+        
         & img {
           width: 0.875rem;
           height: 0.875rem;
           filter: invert(0.3) sepia(1) saturate(5) hue-rotate(240deg) brightness(0.85);
         }
       }
-
+      
       & .card-button-semestral {
         display: flex;
         justify-content: center;
@@ -151,6 +145,12 @@
       }
     }
 
+    &:has(.card-semestral:hover) img.stars-right {
+      position: absolute;
+      bottom: 0%;
+      right: 10%;
+    }
+    
     & .card-mensal {
       background-color: var(--shape-base);
       max-width: 288px;
@@ -331,5 +331,53 @@
       top: 23%;
       right: 10%;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .assinatura {
+    margin-bottom: 0;
+    & div.card-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      max-width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+
+      & img.stars-left, & img.stars-right {
+        display: none;
+      }
+
+      & .card-semestral {
+        z-index: 0;
+
+        & img.purple-rabbit {
+          display: none;
+        }
+      }
+
+      & .card-mensal {
+        position: static;
+        transform: none;
+      }
+    
+      & .card-anual {
+        position: static;
+        transform: none;
+      }
+
+      &:has(.card-semestral:hover) .card-mensal {
+        transform: none;;
+      }
+
+      &:has(.card-semestral:hover) .card-anual {
+        transform: none;
+      }
+    
+    }
+
+    
   }
 }
